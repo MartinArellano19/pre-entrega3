@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Presupuesto Personal</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    }
+    input, button {
+    margin: 5px;
+    }
+</style>
+</head>
+<body>
+<h1>Simulador de Presupuesto Personal</h1>
+
+<h2>Agregar Ingreso</h2>
+<input type="text" id="descripcion-ingreso" placeholder="Descripción">
+<input type="number" id="monto-ingreso" placeholder="Monto">
+<button id="agregar-ingreso">Agregar Ingreso</button>
+
+<h2>Agregar Gasto</h2>
+<input type="text" id="descripcion-gasto" placeholder="Descripción">
+<input type="number" id="monto-gasto" placeholder="Monto">
+<button id="agregar-gasto">Agregar Gasto</button>
+
+<h2>Resumen</h2>
+<p><strong>Total Ingresos:</strong> <span id="total-ingresos">$0.00</span></p>
+<p><strong>Total Gastos:</strong> <span id="total-gastos">$0.00</span></p>
+<p><strong>Balance:</strong> <span id="balance">$0.00</span></p>
+
+<h3>Detalle de Ingresos</h3>
+<ul id="lista-ingresos"></ul>
+
+<h3>Detalle de Gastos</h3>
+<ul id="lista-gastos"></ul>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
